@@ -1,0 +1,29 @@
+body {
+    background: #24353f;
+}
+
+.group {
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+    background: #24353f;
+}
+
+.group a:hover{
+    text-decoration: underline !important;
+}
+
+h1 {
+    color: #17a2b8;
+}
+
+button:hover {
+    color: #fff !important;
+}
+
+input {
+    background-color: transparent !important;
+    color: #fff !important;
+    
+}
+input::placeholder {
+    color: #B6B6B6 !important;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/signUp.css">
+    <title>SignUp</title>
+</head>
+<body>
+    <div class="container my-5 text-center">
+        <div class="group m-auto w-75 p-5">
+            <h1>Smart Login System</h1>
+            <input type="text" id="signupName" oninput="nameValidation()" class="form-control my-3" placeholder="Enter your Name">
+            <p class="text-danger text-start d-none" id="invalidName">Please Enter Your Name ( your name must starts with a letter )</p>
+            <input type="text" id="signupEmail" oninput="emailValidation()" class="form-control my-3" placeholder="Enter your email">
+            <p class="text-danger d-none text-start" id="invalidEmail">invalid Email</p>
+            <input type="password" id="signupPass" oninput="passValidation()" class="form-control my-3 text-white" placeholder="Enter your password">
+            <p class="text-danger d-none text-start" id="invalidPass">Password must be Minimum eight characters, at least one uppercase letter, one lowercase letter and one number</p>
+            <p class="text-success d-none" id="success">Success</p>
+            <p class="text-danger d-none" id="incorrect">Email already exists</p>
+            <button class="btn btn-outline-info w-100 my-3" id="signUpBtn">Sign Up</button>
+            <p class="text-white">You have an account? <a href="./index.html" class="text-decoration-none text-white">Sign In</a></p>
+        </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/signUp.js"></script>
+</body>
+</html>
+
+
